@@ -3,18 +3,18 @@ module Oped
     module Mailer extend self
       def prompt!(post = Post.random)
         now  = Time.current
-        text = "How was your day?\n\n"
+        text = "How was your day?"
 
         if post
-          text += "Here's a post from the past:\n"
-          text += "----------------------------\n\n"
+          text += " Here's a post from the past:\n"
+          text += "--------------------------------\n\n"
           text += post.body
         end
 
         Mail.deliver do
           to App.to_email
           from App.from_email
-          subject "How was your #{now.strftime('%A')}"
+          subject "How was your #{now.strftime('%A')}?"
           body text
 
           charset = 'UTF-8'
