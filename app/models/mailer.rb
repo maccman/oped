@@ -16,11 +16,8 @@ module Oped
         end
 
         Mail.deliver do
-          from  'Oped <bot@oped.io>'
-          to    App.to_email
-
-          subject  'How was your day?'
-
+          to  App.to_email
+          subject 'How was your day?'
           body text
 
           charset = 'UTF-8'
