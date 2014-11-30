@@ -8,8 +8,10 @@ module Oped
         if post
           text += <<-EOF.dedent
 
+
             Here's a post from the past:
             ----------------------------
+
           EOF
 
           text += post.body
@@ -18,7 +20,7 @@ module Oped
         Mail.deliver do
           to App.to_email
           from App.from_email
-          subject "How was your #{now.to_s('%A')}"
+          subject "How was your #{now.strftime('%A')}"
           body text
 
           charset = 'UTF-8'
