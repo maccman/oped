@@ -6,11 +6,12 @@ module Oped
 
         if post
           text += <<-EOF.dedent
+
             Here's a post from the past:
             ----------------------------
-
-            #{post.body}
           EOF
+
+          text += post.body
         end
 
         Mail.deliver do
