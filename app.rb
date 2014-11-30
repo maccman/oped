@@ -41,6 +41,25 @@ module Oped
       disable :static
     end
 
+    configure do
+      Mail.defaults do
+        delivery_method :file
+      end
+    end
+
+    configure :production do
+      Mail.defaults do
+        delivery_method :smtp, {
+          address:        ENV['MAILGUN_SMTP_SERVER'],
+          port:           ENV['MAILGUN_SMTP_PORT'],
+          user_name:      ENV['MAILGUN_SMTP_LOGIN'],
+          password:       ENV['MAILGUN_SMTP_PASSWORD'],
+          domain:         'oped.io',
+          authentication: :plain
+        }
+      end
+    end
+
     use Routes::Posts
 
     get '/' do
