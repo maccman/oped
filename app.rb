@@ -42,6 +42,10 @@ module Oped
     end
 
     use Routes::Posts
+
+    get '/' do
+      'Oped'
+    end
   end
 end
 
