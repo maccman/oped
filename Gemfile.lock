@@ -47,6 +47,7 @@ GEM
     sinatra-sequel (0.9.0)
       sequel (>= 3.2.0)
       sinatra (>= 0.9.4)
+    table_print (1.5.3)
     thin (1.6.3)
       daemons (~> 1.0, >= 1.0.9)
       eventmachine (~> 1.0)
@@ -75,4 +76,5 @@ DEPENDENCIES
   sinatra
   sinatra-contrib!
   sinatra-sequel
+  table_print
   thin

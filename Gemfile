@@ -14,6 +14,7 @@ gem 'dotenv'
 gem 'mail'
 gem 'email_reply_parser'
 gem 'dedent'
+gem 'table_print'
 
 # DB
 gem 'sequel'
