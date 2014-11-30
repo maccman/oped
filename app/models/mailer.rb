@@ -16,7 +16,8 @@ module Oped
         end
 
         Mail.deliver do
-          to  App.to_email
+          to App.to_email
+          from App.from_email
           subject 'How was your day?'
           body text
 

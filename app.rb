@@ -30,6 +30,7 @@ module Oped
       }
 
       set :to_email, ENV['TO_EMAIL']
+      set :from_email, ENV['FROM_EMAIL']
     end
 
     configure :development, :staging do
