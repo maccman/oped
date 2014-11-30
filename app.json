@@ -6,8 +6,5 @@
   "addons": ["heroku-postgresql", "mailgun", "pgbackups", "scheduler"],
   "env": {
     "RACK_ENV": "production"
-  },
-  "scripts": {
-    "postdeploy": "bundle exec rake db:migrate"
   }
 }
