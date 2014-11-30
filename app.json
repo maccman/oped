@@ -1,0 +1,13 @@
+{
+  "name": "Oped",
+  "description": "An email based diary.",
+  "website": "http://alexmaccaw.com",
+  "repository": "https://github.com/maccman/oped",
+  "addons": ["heroku-postgresql", "mailgun", "pgbackups", "scheduler"],
+  "env": {
+    "RACK_ENV": "production"
+  },
+  "scripts": {
+    "postdeploy": "bundle exec rake db:migrate"
+  }
+}
