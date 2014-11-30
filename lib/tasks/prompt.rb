@@ -1,6 +1,4 @@
-namespace :prompt do
-  desc "Email"
-  task :email => :app do
-    Mailer.prompt!
-  end
+desc "Email Prompt"
+task :prompt => :app do
+  Mailer.prompt!
 end

@@ -6,14 +6,8 @@ module Oped
         text = 'How was your day?'
 
         if post
-          text += <<-EOF.dedent
-
-
-            Here's a post from the past:
-            ----------------------------
-
-          EOF
-
+          text += "\nHere's a post from the past:"
+          text += "\n----------------------------\n\n"
           text += post.body
         end
 
