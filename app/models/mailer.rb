@@ -3,11 +3,11 @@ module Oped
     module Mailer extend self
       def prompt!(post = Post.random)
         now  = Time.current
-        text = 'How was your day?'
+        text = "How was your day?\n\n"
 
         if post
-          text += "\nHere's a post from the past:"
-          text += "\n----------------------------\n\n"
+          text += "Here's a post from the past:\n"
+          text += "----------------------------\n\n"
           text += post.body
         end
 
