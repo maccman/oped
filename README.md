@@ -20,7 +20,7 @@ heroku run rake db:migrate -a your-app-name
 heroku addons:open mailgun -a your-app-name
 ```
 
-![Mailgun](https://maccman.github.io/docs/mailgun.png)
+![Mailgun](http://maccman.github.io/oped/docs/mailgun.png)
 
 4) Configure the Heroku scheduler to send out the daily emails.
 
@@ -28,7 +28,7 @@ heroku addons:open mailgun -a your-app-name
 heroku addons:open scheduler
 ```
 
-![Scheduler](https://maccman.github.io/docs/scheduler.png)
+![Scheduler](http://maccman.github.io/oped/docs/scheduler.png)
 
 5) Lastly set some configuration variables. Set `TO_EMAIL` to your email address, and `FROM_EMAIL` to the email address Mailgun generated for you.
 
