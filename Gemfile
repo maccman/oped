@@ -13,6 +13,7 @@ gem 'json', '~> 1.7.7'
 gem 'dotenv'
 gem 'mail'
 gem 'email_reply_parser'
+gem 'dedent'
 
 # DB
 gem 'sequel'

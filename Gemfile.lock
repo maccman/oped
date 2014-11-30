@@ -20,6 +20,7 @@ GEM
       tzinfo (~> 1.1)
     builder (3.2.2)
     daemons (1.1.9)
+    dedent (1.0.1)
     dotenv (1.0.2)
     email_reply_parser (0.5.8)
     erubis (2.7.0)
@@ -61,6 +62,7 @@ PLATFORMS
 DEPENDENCIES
   activesupport
   builder
+  dedent
   dotenv
   email_reply_parser
   erubis
