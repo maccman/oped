@@ -21,6 +21,7 @@ GEM
     builder (3.2.2)
     daemons (1.1.9)
     dotenv (1.0.2)
+    email_reply_parser (0.5.8)
     erubis (2.7.0)
     eventmachine (1.0.3)
     i18n (0.6.11)
@@ -61,6 +62,7 @@ DEPENDENCIES
   activesupport
   builder
   dotenv
+  email_reply_parser
   erubis
   i18n
   json (~> 1.7.7)

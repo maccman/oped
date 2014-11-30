@@ -4,7 +4,7 @@ module Oped
       post '/posts' do
         Post.create!(
           subject: params[:subject],
-          body:    params[:'stripped-text']
+          reply:   params[:'body-plain']
         )
         200
       end

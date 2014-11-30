@@ -9,8 +9,6 @@ module Oped
             Here's a post from the past:
             ----------------------------
 
-            ## #{post.subject}
-
             #{post.body}
           EOF
         end

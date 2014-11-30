@@ -4,6 +4,10 @@ module Oped
       def self.random
         order(:random.sql_function).first
       end
+
+      def reply=(value)
+        self.body = EmailReplyParser.parse_reply(value)
+      end
     end
   end
 end
