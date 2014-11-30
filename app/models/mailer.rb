@@ -7,7 +7,7 @@ module Oped
 
         if post
           text += " Here's a post from the past:\n"
-          text += "--------------------------------\n\n"
+          text += "-------------------------------------------------------\n\n"
           text += post.body
         end
 
