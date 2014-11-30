@@ -2,6 +2,7 @@ module Oped
   module Models
     module Mailer extend self
       def prompt!(post = Post.random)
+        now  = Time.current
         text = 'How was your day?'
 
         if post
@@ -17,7 +18,7 @@ module Oped
         Mail.deliver do
           to App.to_email
           from App.from_email
-          subject 'How was your day?'
+          subject "How was your #{now.to_s('%A')}"
           body text
 
           charset = 'UTF-8'
