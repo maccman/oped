@@ -2,11 +2,11 @@ module Oped
   module Models
     module Mailer extend self
       def prompt!(post = Post.random)
-        now  = Time.current
+        now  = Date.current
         text = "Just reply to this email with your entry."
 
         if post
-          days = (now.to_date - post.created_at.to_date).round
+          days = (now - post.created_at.to_date).round
           text += "\n\nOh snap, remember this? #{days} days ago you wrote...\n\n"
           text += post.body
         end
