@@ -7,7 +7,7 @@ module Oped
 
         if post
           days = (now.to_date - post.created_at.to_date).round
-          text += "\nOh snap, remember this? #{days} days ago you wrote...\n"
+          text += "\n\nOh snap, remember this? #{days} days ago you wrote...\n\n"
           text += post.body
         end
 
